@@ -5,7 +5,7 @@
 
 
 template <typename RandomIter, typename Comparator, typename Container>
-void merge(RandomIter begin, RandomIter middle, RandomIter end, Comparator cmp, Container tmp)
+void merge(RandomIter begin, RandomIter middle, RandomIter end, Comparator cmp, Container& tmp)
 {    
     std::copy(begin, middle, std::back_inserter(tmp));
     
