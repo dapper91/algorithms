@@ -60,7 +60,7 @@ private:
         if (node) {
             if (value == node->value) {
                 if (!node->left && !node->right) {
-                	delete node;
+                    delete node;
                     return nullptr;
                 }
                 else {
